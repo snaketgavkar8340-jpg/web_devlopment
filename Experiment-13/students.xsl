@@ -18,11 +18,11 @@
 					
                   <xsl:if test = "marks >= 90"> 
                      <tr> 
-                        <td>97</td> 
-                        <td>Sanket</td> 
-                        <td>Gavkar</td> 
-                        <td>Sanket</td> 
-                        <td>97</td> 
+                        <td><xsl:value-of select = "@rollno"/></td> 
+                        <td><xsl:value-of select = "firstname"/></td> 
+                        <td><xsl:value-of select = "lastname"/></td> 
+                        <td><xsl:value-of select = "nickname"/></td> 
+                        <td><xsl:value-of select = "marks"/></td> 
                      </tr> 
                   </xsl:if> 
                </xsl:for-each> 
